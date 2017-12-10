@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segundo Examen Parcial</title>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="js/my_scripts.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<h1>Segundo Examen Parcial</h1>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1">Examen</a></li>
+    <li><a href="#tabs-2">Resultado</a></li>
+	<li><a href="#tabs-3">Calculadora</a></li>
+  </ul>
+  <div id="tabs-1">
+    <form id="form1" name="form1" method="post">
+      Instrucciones: Responde segun corresponda.<br>
+       <ol>
+        <li>
+         Capital del estado de Baja California.
+          <p>
+            <label>
+              <input type="radio" name="pregunta_1" value="ensenada" id="pregunta_1_0">
+              Ensenada</label>
+            <br>
+            <label>
+              <input type="radio" name="pregunta_1" value="tecate" id="pregunta_1_1">
+              Tecate</label>
+            <br>
+            <label>
+              <input type="radio" name="pregunta_1" value="tijuana" id="pregunta_1_2">
+              Tijuana</label>
+            <br>
+            <label>
+              <input type="radio" name="pregunta_1" value="mexicali" id="pregunta_1_3">
+              Mexicali</label>
+            <br>
+          </p> 
+        </li>
+        <li>
+         Capital del estado de Sonora.
+          <p>
+            <label>
+              <input type="radio" name="pregunta_2" value="cd obregon" id="pregunta_2_0">
+              Cd. Obregon</label>
+            <br>
+            <label>
+              <input type="radio" name="pregunta_2" value="Nogales" id="pregunta_2_1">
+              Nogales</label>
+            <br>
+            <label>
+              <input type="radio" name="pregunta_2" value="hermosillo" id="pregunta_2_2">
+              Hermosillo</label>
+            <br>
+            <label>
+              <input type="radio" name="pregunta_2" value="caborca" id="pregunta_2_3">
+              Caborca</label>
+            <br>
+          </p>
+        </li>
+      </ol>
+      <input type="reset" name="reset" id="limpiar" value="Limpiar">
+      <input type="button" name="enviar" id="enviar" value="Enviar">
+    </form>
+  </div>
+  <div id="tabs-2">
+   Resultados<br>
+    <p id="preguntas">Preguntas: 2</p>
+    <p id="aciertos">Aciertos: 0</p>
+    <p id="calificacion">Calificacion: 0%</p>
+  </div>
+  <div id="tabs-3">
+   <br>
+    <table width="200" border="1">
+      <tbody>
+        <tr>
+          <td colspan="2"><input class="display_cal" type="text" name="textfield" id="textfield"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><table border="1">
+            <tbody>
+              <tr>
+                <td><input class="button_cal" type="button" name="mc" id="mc" value="MC"></td>
+                <td><input class="button_cal" type="button" name="mr" id="mr" value="MR"></td>
+                <td><input class="button_cal" type="button" name="ms" id="ms" value="MR"></td>
+                <td><input class="button_cal" type="button" name="mp" id="mp" value="M+"></td>
+                <td><input class="button_cal" type="button" name="mm" id="mm" value="M-"></td>
+              </tr>
+              <tr>
+				<td><input class="button_cal" type="button" name="ret" id="ret" value="<-"></td>
+			  	<td><input class="button_cal" type="button" name="ce" id="ce" value="CE"></td>
+				<td><input class="button_cal" type="button" name="c" id="c" value="C"></td>
+				<td><input class="button_cal" type="button" name="pm" id="pm" value="+/-"></td>
+				<td><input class="button_cal" type="button" name="rc" id="rc" value="v~"></td>
+             </tr>
+              <tr>
+				<td><input class="button_cal" type="button" name="num_7" id="num_7" value="7"></td>
+				<td><input class="button_cal" type="button" name="num_8" id="num_8" value="8"></td>
+				<td><input class="button_cal" type="button" name="num_9" id="num_9" value="9"></td>
+				<td><input class="button_cal" type="button" name="op_div" id="op_div" value="/"></td>
+				<td><input class="button_cal" type="button" name="op_por" id="op_por" value="%"></td>
+              </tr>
+              <tr>
+				<td><input class="button_cal" type="button" name="num_4" id="num_4" value="4"></td>
+				<td><input class="button_cal" type="button" name="num_5" id="num_5" value="5"></td>
+				<td><input class="button_cal" type="button" name="num_6" id="num_6" value="6"></td>
+				<td><input class="button_cal" type="button" name="op_mul" id="op_mul" value="*"></td>
+				<td><input class="button_cal" type="button" name="op_1x" id="op_1x" value="1/x"></td>
+              </tr>
+            </tbody>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table border="1">
+            <tbody>
+              <tr>
+                <td><input class="button_cal" type="button" name="num_1" id="num_1" value="1"></td>
+                <td><input class="button_cal" type="button" name="num_2" id="num_2" value="2"></td>
+                <td><input class="button_cal" type="button" name="num_3" id="num_3" value="3"></td>
+                <td><input class="button_cal" type="button" name="op_res" id="op_res" value="-"></td>
+              </tr>
+			<tr>
+                <td colspan="2"><input class="button_cero" type="button" name="num_0" id="num_0" value="0"></td>
+                <td><input class="button_cal" type="button" name="num_pun" id="num_pun" value="."></td>
+                <td><input class="button_cal" type="button" name="op_sum" id="op_sum" value="+"></td>
+              </tr>
+            </tbody> 
+          </table></td>
+          <td><input class="button_igual" type="button" name="op_igu" id="op_igu" value="="></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>

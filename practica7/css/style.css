@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import url("style_frm.css");
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.td-label {
+	text-align: right;
+}
+
+.td_centered {
+	text-align: center;
+}
+
+textarea {
+	width: 95%;
+}
+
+.input_95 {
+	width: 95%;
+}
+
+#email {
+	width: 95%;
+}

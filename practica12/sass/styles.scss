@@ -1,0 +1,114 @@
+//colors
+$color_sage_approx: #9c9f84;
+$white: white;
+$color_willow_grove_approx: #5c755e;
+$color_red_berry_approx: darkred;
+$color_mine_shaft_approx: #2f2f2d;
+
+//fonts
+$font_0: Verdana;
+$font_1: Sans Serif;
+
+body {
+	margin: 0;
+	background: $color_sage_approx;
+	font-family: $font_0, $font_1;
+}
+.header {
+	margin: 10px;
+	border-radius: 5px;
+	height: 70px;
+	background: $color_willow_grove_approx;
+	text-align: center;
+	h1 {
+		padding: 15px;
+		color: $white;
+	}
+}
+.htal_menu {
+	background: $color_willow_grove_approx;
+	width: 260px;
+    border-radius: 5px;
+	height: 600px;
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	margin-top: 0;
+	h1 {
+		color: $white;
+	}
+	ul {
+		margin: 30px;
+		padding: 0;
+		list-style-type: none;
+		li {
+			padding: 10px;
+			margin-bottom: 10px;
+			background-color: $color_red_berry_approx;
+			color: $white;
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+			&:hover {
+				background-color: $color_mine_shaft_approx;
+			}
+		}
+	}
+}
+.content {
+	background: $color_willow_grove_approx;
+	width: auto;
+	height: 580px;
+	margin-left: 280px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 10px;
+	p {
+		text-align: justify;
+	}
+}
+.content_small {
+	background: $color_willow_grove_approx;
+	width: auto;
+	height: 535px;
+	margin-left: 280px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.footer {
+	background: $color_willow_grove_approx;
+	margin: 10px;
+	border-radius: 5px;
+	height: 35px;
+}
+.vtal_menu {
+	border-radius: 5px;
+	margin: 10px 10px 10px 280px;
+	background-color: $color_willow_grove_approx;
+	ul {
+		margin: 10px;
+		list-style-type: none;
+		overflow: hidden;
+		li {
+			float: left;
+			margin: 10px;
+			background-color: $color_red_berry_approx;
+			a {
+				padding: 10px;
+				text-decoration: none;
+				display: block;
+				color: $white;
+				&:hover {
+					background-color: $color_mine_shaft_approx;
+				}
+			}
+		}
+	}
+}
+@media screen {
+}

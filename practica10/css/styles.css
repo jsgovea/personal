@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.button_cal {
+	height: 40px;
+	width:  60px;
+}
+
+.button_igual {
+	height: 90px;
+	width: 40px;
+}
+
+.display_cal {
+	width: 330px;
+}
+
+.button_cero {
+	height: 40px;
+	width: 130px;
+}
